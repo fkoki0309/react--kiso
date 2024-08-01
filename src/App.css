@@ -5,12 +5,17 @@ header {
   margin-bottom: 30px;
 }
 
+h2 {
+  text-align: center;
+}
+
 .title {
   margin: 0;
 }
 
 body {
   justify-content: center;
+  text-align: center;
   width: 100%;
   margin: 0;
 }
@@ -26,11 +31,16 @@ ul {
   margin: auto;
   border-style: solid;
   border-color: rgb(67, 69, 69);
-  height: 50px;
+  height: 40px;
 }
 
 .threadList+.threadList {
   border-top: none;
   border-color: rgb(67, 69, 69);
+}
 
+.newThreadButton {
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
