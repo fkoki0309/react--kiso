@@ -11,7 +11,7 @@ export const ThreadList = () => {
   const [threads, setThread] = useState([]);
 
   useEffect(() => {
-    fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=1', { method: 'GET' })
+    fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
       .then(response => response.json())
       .then(data => {
         setThread(data);
