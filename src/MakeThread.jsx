@@ -6,7 +6,9 @@ import { useNavigate } from 'react-router-dom';
 function MakeThread() {
   const [newThread, setNewThread] = useState("");
   const navigate = useNavigate();
-
+  const onMovePage = () => {
+    navigate("/");
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -35,9 +37,11 @@ function MakeThread() {
   return (
     <>
       <Header />
+      <h2>スレッド新規作成</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          className='makeNewThreadButton'
           size="40"
           id='post'
           placeholder='スレッドタイトル'
@@ -45,9 +49,10 @@ function MakeThread() {
           onChange={makeNewThread}
         />
         <div>
-          <input type="submit" value="作成" id="checkButton" />
+          <input className='checkButton' type="submit" value="作成" id="checkButton" />
         </div>
       </form>
+      <button className='returnButton' onClick={onMovePage}>Topに戻る</button>
     </>
   );
 }

@@ -44,3 +44,17 @@ ul {
   margin-top: 20px;
   margin-left: 40px;
 }
+
+.returnButton {
+  border: none;
+  background-color: white;
+  color: blue;
+}
+
+.makeNewThreadButton {
+  height: 40px;
+}
+
+.checkButton {
+  margin: 20px;
+}
