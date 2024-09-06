@@ -11,31 +11,13 @@ export const ThreadList = (props) => {
   }
 
 
-  // const [threads, setThread] = useState([]);
-
-  // useEffect(() => {
-  //   fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       setThread(data);
-  //     })
-  //     .catch(error => {
-  //       console.error('Error fetching thread:', error);
-  //     });
-  // }, []);
-
-  // if (!threads) {
-  //   return <div>Loading...</div>;
-  // }
-  // console.log(threads.title);
-
   return <>
     <Header />
     <h2>スレッド一覧</h2>
-    {<ul>
+    {<ul className='threadList'>
       {
         props.threads.map(thread =>
-          <li className='threadList' key={thread.id}><Link to={"/threads/" + thread.id}>{thread.title}</Link></li>
+          <li className='threads' key={thread.id}><Link to={"/threads/" + thread.id}>{thread.title}</Link></li>
         )
       }
     </ul>}

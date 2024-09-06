@@ -20,12 +20,12 @@ body {
   margin: 0;
 }
 
-ul {
+.threadList {
   width: 400px;
   margin: auto;
 }
 
-.threadList {
+.threads {
   list-style: none;
   text-align: center;
   margin: auto;
@@ -34,7 +34,7 @@ ul {
   height: 40px;
 }
 
-.threadList+.threadList {
+.threads+.threads {
   border-top: none;
   border-color: rgb(67, 69, 69);
 }
@@ -57,4 +57,33 @@ ul {
 
 .checkButton {
   margin: 20px;
+}
+
+.posts {
+  list-style: none;
+  border-style: solid;
+  border-color: rgb(67, 69, 69);
+  height: 40px;
+}
+
+.posts+.posts {
+  border-top: none;
+  border-color: rgb(67, 69, 69);
+}
+
+.postList {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+}
+
+.makeNewPostButton {
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 60px;
+}
+
+.postSubmitButton {
+  margin-top: 20px;
 }
